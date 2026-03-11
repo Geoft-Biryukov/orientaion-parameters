@@ -1,0 +1,49 @@
+<h3>Преобразование углов Эйлера-Крылова в кватернион ориентации</h3>
+
+<form class="converter-section" (submit)="onSubmit()">
+    <div class="converter-grid">
+        <div class="converter-form">
+            <h3 style="margin-bottom: 30px; font-size: 24px;">Углы Эйлера-Крылова (в градусах)</h3>
+            <div class="form-group">
+                <label for="psi">Курс(psi)</label>
+                <input [(ngModel)]="angles.psi" type="number" id="psi" name="psi">
+            </div>
+            
+            <div class="form-group">
+                <label for="theta">Тангаж(theta)</label>
+                <input [(ngModel)]="angles.theta" type="number" id="theta" name="theta">
+            </div>
+            
+            <div class="form-group">
+                <label for="phi">Крен(phi)</label>
+                <input [(ngModel)]="angles.phi" type="number" id="phi" name="phi">
+            </div>
+
+            <button type="submit" class="cta-button" style="width: 100%;">Преобразовать</button>
+        </div>
+
+        <div class="converter-form">
+            <h3 style="margin-bottom: 30px; font-size: 24px;">Кватернион ориентации</h3>
+            
+            <div class="form-group">
+                <label for="q0">Lambda0</label>
+                <input [ngModel]="lambda.w" type="number" id="q0" name="lambda0" readonly>
+            </div>       
+            
+            <div class="form-group">
+                <label for="q1">Lambda1</label>
+                <input [ngModel]="lambda.x" type="number" id="q1" name="lambda1" readonly>
+            </div>   
+
+            <div class="form-group">
+                <label for="q2">Lambda2</label>
+                <input [ngModel]="lambda.y" type="number" id="q2" name="lambda2" readonly>
+            </div>   
+
+            <div class="form-group">
+                <label for="q3">Lambda3</label>
+                <input [ngModel]="lambda.z" type="number" id="q3" name="lambda3"readonly>
+            </div>   
+        </div>
+    </div>        
+</form>
