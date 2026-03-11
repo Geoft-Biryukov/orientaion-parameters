@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background: linear-gradient(-90deg, #000000 0%, #05053b 100%);
+    background: linear-gradient(-90deg, #080931 0%, #0a0a5e 100%);
+}
+
+.cta-button {
+	margin-top: 50px;
+	display: inline-block;
+	padding: 15px 40px;
+	background: linear-gradient(135deg, #2a6444, #649622);
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+	border: none;
+	cursor: pointer;
 }
